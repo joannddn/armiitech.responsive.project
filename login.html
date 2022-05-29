@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;500;700&family=Roboto:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet">
-    <title>Armiitech - Recuperación Enviada</title>
+    <title>Armiitech - Recupera tu contraseña</title>
     <style>
         :root {
             --black: #000000;
@@ -42,27 +42,25 @@
             justify-self: center;
             display: none;
         }
-        .title {
-            color: var(--blue-main);
-            font-size: var(--lg);
-            font-family: 'Anton', sans-serif;
-            text-align: center;
-            margin-top: 40px;
-        }
-        .subtitle {
-            color: var(--main-grey);
-            font-size: var(--sm);
-            font-weight: 300;
-            font-family: 'Quicksand', sans-serif;
-            text-align: center;
-            margin: 0px 0px 0px 0px;
-        }
-        .email-logo {
-            width: 100px;
-            height: 100px;
-            justify-self: center;
+        .form {
+            display: grid;
             margin-top: 30px;
-            margin-bottom: 30px;
+            margin-bottom: 100px;
+        }
+        .label{
+            font-size: var(--sm);
+            font-weight: bold;
+            margin-bottom: 4px;
+            color: var(--blue-main);
+        }
+        .input {
+            background-color: var(--white-grey);
+            border: none;
+            border-radius: 4px;
+            height: 30px;
+            font-size: var(--md);
+            margin-bottom: 8px;
+            padding: 4px;
         }
         .primary-button {
             background-color: var(--blue-main);
@@ -75,18 +73,25 @@
             font-size: var(--sm);
             font-weight: bold;
         }
-        .resend {
+        .recover-password {
             font-size: var(--md);
             font-weight: bold;
             font-family: 'Quicksand', sans-serif;
             text-align: center;
-        }
-        .resend span {
             color: var(--main-grey);
-        }
-        .resend a {
-            color: var(--blue-main);
             text-decoration: none;
+            margin-top: 16px;
+        }
+        .secondary-button {
+            background-color: var(--white);
+            border-radius: 4px;
+            border: 1px solid var(--blue-main);
+            color: var(--blue-main);
+            height: 40px;
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--sm);
+            font-weight: bold;
         }
         @media (max-width: 640px) {
             .logo {
@@ -99,16 +104,15 @@
     <div class="login">
         <div class="form-container">
             <img src="./Armiitech_Assets_Logos/Armiitech_Logo_Main.png" alt="Armiitech Logo" class="logo">
-            <h1 class="title">El Email ha sido enviado</h1>
-            <p class="subtitle">Por favor revisa tu bandeja de entrada y sigue los pasos para crear una nueva contraseña.</p>
-            <img src="./Armiitech_Assets_Icons/Mail_Recovery.svg" alt="Email Logo" class="email-logo">
             <form action="/" class="form">
-                <input type="submit" value="Volver" class="primary-button login-button">
+                <label for="email" class="label">Correo electrónico</label>
+                <input type="text" id="email" placeholder="ejemplo@armiitech.com" class="input input-email">
+                <label for="password" class="label">Contraseña</label>
+                <input type="password" id="password" placeholder="*********" class="input input-password">
+                <input type="submit" value="Iniciar Sesión" class="primary-button login-button">
+                <a href="/" class="recover-password">Olvide mi contraseña</a>
             </form>
-            <p class="resend">
-                <span>¿No recibiste el Email?</span>
-                <a href="/">Reenviar</a>
-            </p>
+            <button class="secondary-button signup-button">Regístrate</button>
         </div>
     </div>
 </body>
