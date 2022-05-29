@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;500;700&family=Roboto:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet">
+    <title>Armiitech - Menu Header</title>
+    <style>
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+            --blue-main: #14213d;
+            --main-grey: #3F4556;
+            --white-grey: #F2F2F2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 20px;
+        }
+        body {
+            margin: 0;
+            font-family: 'Anton', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+        .desktop-menu {
+            width: 100px;
+            height: auto;
+            border: 3px solid var(--white-grey);
+            border-radius: 4px;
+            padding: 15px;
+        }
+        .desktop-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .desktop-menu ul li {
+            text-align: end;
+        }
+        .desktop-menu ul li a {
+            text-decoration: none;
+            font-family: 'Quicksand', sans-serif;
+            color: var(--main-grey);
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: bold;
+
+        }
+        .desktop-menu ul li:last-child {
+            padding-top: 20px;
+            border-top: 3px solid var(--white-grey);
+        }
+        .desktop-menu ul li:last-child a {
+            color: var(--blue-main);
+            font-size: var(--sm);
+            font-family: 'Quicksand', sans-serif;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="desktop-menu">
+        <ul>
+            <li>
+                <a href="/" class="title">Mis Ordenes</a>
+            </li>
+            <li>
+                <a href="/">Mi Cuenta</a>
+            </li>
+            <li>
+                <a href="/">Cerrar sesión</a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
