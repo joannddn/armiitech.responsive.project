@@ -31,16 +31,29 @@
             display: grid;
             place-items: center;
         }
+        .title {
+            font-size: var(--lg);
+            font-family: 'Quicksand', sans-serif;
+            margin-bottom: 40px;
+        }
+        .my-order-content {
+            display: flex;
+            background-color: var(--main-grey);
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="my-order">
         <div class="my-order-container">
-            <h1>Mis ordenes</h1>
+            <h1 class="title">Mis ordenes</h1>
             <div class="my-order-content">
                 <p>
                     <span>29/5/22</span>
                     <span>6 Articulos</span>
+                </p>
+                <p>
+                    <span>500$</span>
                 </p>
             </div>
             <div class="shopping-cart-card">
