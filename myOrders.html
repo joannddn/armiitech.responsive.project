@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;500;700&family=Roboto:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet">
-    <title>Armiitech - Mi Orden</title>
+    <title>Armiitech - Mis Ordenes</title>
     <style>
         :root {
             --black: #000000;
@@ -38,16 +38,16 @@
             font-weight: bold;
         }
         .my-order-container {
-            display: grid;
-            grid-template-rows: auto 1fr auto;
             width: 300px;
         }
         .order-info {
-            display: flex;
-            justify-content: space-between;
-            background-color: var(--blue-main);
+            display: grid;
+            grid-template-columns: auto 1fr 0 0;
+            gap: 16px;
+            background-color: var(--white-grey);
             border-radius: 10px;
             padding: 0 20px 0 20px;
+            margin-bottom: 10px;
         }
         .order-info p:nth-child(1) {
             display: flex;
@@ -57,43 +57,20 @@
             display: flex;
             align-items: center;
             font-weight: bold;
+            justify-content: end;
+            color: var(--blue-main);
         }
-        .order-info p {
-            color: var(--white-grey);
-        }
-        .shopping-cart-card{
-            display: grid;
-            grid-template-columns: auto 1fr 1fr;
-            margin-bottom: 10px;
-        }
-        .shopping-cart-card p {
+        .order-info figure {
             display: flex;
             align-items: center;
-        }
-        .shopping-cart-card p:nth-child(2) {
-            font-family: 'Quicksand', sans-serif;
-            color: var(--main-grey);
-        }
-        .shopping-cart-card p:nth-child(3) {
-            color: var(--blue-main);
-            font-weight: bold;
-            display: flex;
-            justify-content: end;
-            margin: 0 20px 0 0;
-        }
-        .shopping-cart-card figure img {
-            width: 70px;
-            height: 70px;
-        }
-        .shopping-cart-card figure {
-            margin: 10px;
+            margin: 0 0 0 10px;
         }
     </style>
 </head>
 <body>
     <div class="my-order">
         <div class="my-order-container">
-            <h1 class="title">Mi orden</h1>
+            <h1 class="title">Mis ordenes</h1>
             <div class="my-order-content">
                 <div class="order-info">
                     <p>
@@ -102,31 +79,47 @@
                     </p>
                     <p>
                         <span>1.377$</span>
+                        <figure>
+                            <img src="./Armiitech_Assets_Icons/Path.svg" alt="">
+                        </figure>
                     </p>
                 </div>
-            </div>
-            <div class="shopping-cart-card">
-                <figure>
-                    <img src="./Armiitech_Assets_img/1467-samsung-980-ssd-1tb-pcie-30-nvme-m2.webp" alt="Producto Número 1">
-                </figure>
-                <p>Samsung 980 SSD M.2 1TB</p>
-                <p>100$</p>
-            </div>
-
-            <div class="shopping-cart-card">
-                <figure>
-                    <img src="./Armiitech_Assets_img/1157-msi-geforce-rtx-3060-ventus-2x-oc-12gb-gddr6.webp" alt="Producto Número 2">
-                </figure>
-                <p>MSI RTX 3060 Ventus</p>
-                <p>478$</p>
-            </div>
-
-            <div class="shopping-cart-card">
-                <figure>
-                    <img src="./Armiitech_Assets_img/1567-hp-victus-16-e0090ns-amd-ryzen-7-5800h-16gb-512gb-ssd-rtx-3050ti-161.webp" alt="Producto Número 3">
-                </figure>
-                <p>HP Victus 16 AMD</p>
-                <p>799$</p>
+                <div class="order-info">
+                    <p>
+                        <span>29/5/22</span>
+                        <span>6 Articulos</span>
+                    </p>
+                    <p>
+                        <span>1.377$</span>
+                        <figure>
+                            <img src="./Armiitech_Assets_Icons/Path.svg" alt="">
+                        </figure>
+                    </p>
+                </div>
+                <div class="order-info">
+                    <p>
+                        <span>29/5/22</span>
+                        <span>6 Articulos</span>
+                    </p>
+                    <p>
+                        <span>1.377$</span>
+                        <figure>
+                            <img src="./Armiitech_Assets_Icons/Path.svg" alt="">
+                        </figure>
+                    </p>
+                </div>
+                <div class="order-info">
+                    <p>
+                        <span>29/5/22</span>
+                        <span>6 Articulos</span>
+                    </p>
+                    <p>
+                        <span>1.377$</span>
+                        <figure>
+                            <img src="./Armiitech_Assets_Icons/Path.svg" alt="">
+                        </figure>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
