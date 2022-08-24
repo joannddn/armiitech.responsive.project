@@ -19,44 +19,90 @@
             --md: 16px;
             --lg: 20px;
         }
+
         body {
             margin: 0;
             font-family: 'Anton', sans-serif;
             font-family: 'Quicksand', sans-serif;
             font-family: 'Roboto', sans-serif;
         }
+        
         nav {
             background-color: var(--blue-main);
             display: flex;
             justify-content: space-between;
             padding: 10px 0 10px 0;
+            height: 60px;
         }
+
         .menu {
             display: none;
+            height: 40px;
+            width: 40px;
+            padding: 10px 0 0 25px;
         }
-        .logo {
-            width: 250px;
+
+        
+        .navbar-left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
         .navbar-right{
-            height: 50px;
-            margin: 0;
+            margin-right: 20px;
         }
+
         .navbar-right ul {
             list-style: none;
-            padding: 0;
             color: var(--white-grey);
             display: flex;
+            justify-content: center;
             align-items: center;
-            margin: 0 10px 0 0;
-           
+            padding: 0 15px 0 15px;
         }
+
+        .navbar-right ul li {
+            padding: 0 5px 0 5px;
+        }
+
         .navbar-right ul li:hover {
             color: var(--white);
         }
+        
+        .navbar-shopping-cart {
+            position: relative;
+        }
+
+        .navbar-shopping-cart div {
+            height: 15px;
+            width: 15px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        } 
+
         .navbar-shopping-cart img {
             width: 30px;
             height: 30px;
         }
+
+        @media (max-width: 640px) {
+            .menu {
+                display: block;
+            }
+
+            .user-email {
+                display: none;
+            }
+
+            .logo {
+                margin: 0 auto;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -67,10 +113,10 @@
         </div>
         <div class="navbar-right">
             <ul>
-                <li>ejemplo@armiitech.com</li>
+                <li class="user-email">ejemplo@armiitech.com</li>
                 <li class="navbar-shopping-cart">
                     <img src="./Armiitech_Assets_Icons/cart.svg" alt="carrito">
-                    <div>2</div>
+                    <div></div>
                 </li>
             </ul>
         </div>
